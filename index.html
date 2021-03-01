@@ -1,40 +1,176 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>reveal.js</title>
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>You don't know ADA</h1>
+          <p>study notes</p>
+        </section>
+        <section>
+          <h2>Assessible/operable by everyone</h2>
+          <section>Disabled (blind, deaf, color-blind, low-vision)</section>
+          <section>Older</section>
+          <section>People in rural area</section>
+          <section>People in developing countries</section>
+          <section>people experienceing impariment</section>
+        </section>
+        <section>
+          <h2>WCAG (web content accessiblity guidelines)</h2>
+          <section>
+            <h3>Perceivable</h3>
+            <ul>
+              <li>img text alt</li>
+              <li>captions to video</li>
+              <li>color - low contrast - not good</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Operable</h3>
+            <ul>
+              <li>keyboard traps</li>
+              <li>keyboard-only nav</li>
+              <li>media player controls shown</li>
+              <li>enough time to fill out a form</li>
+              <li>hover - won't work with keyboard or touchscreen</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Understandable</h3>
+            <ul>
+              <li>order of page makes sense</li>
+              <li>content clearly written;</li>
+              <li>interaction easy to understand</li>
+              <li>error msg clear and easy to resolve</li>
+              <li>predictable</li>
+              <li>understandable the UI, consistent, not confusing</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Robust</h3>
+            <ul>
+              <li>only support newest browser/os?</li>
+              <li>develoepd with best practices?</li>
+              <li>consider a11y on-going maintenance task</li>
+              <li>can be consumed by a wide range of user agents</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <h2>Impairement of disablity</h2>
+          <p>temp, situational, perm</p>
+        </section>
+        <section>
+          <h2>Impairments</h2>
+          <section>
+            <h3>visual blind</h3>
+            <ul>
+              <li>color blind: 8% male, 0.5% female (perm)</li>
+              <li>use screen reader</li>
+            </ul>
+          </section>
+          <section
+            data-background="https://images.firstpost.com/wp-content/uploads/2019/01/Braille-Kindle-for-the-blind.jpg"
+          >
+            <h2>Braille</h2>
+          </section>
+          <section>
+            <h3>low-vision accurity (perm)</h3>
+            <p>magnification</p>
+          </section>
+          <section>
+            <h3>Motor</h3>
+            <ul>
+              <li>broken arm or wrist or neck (temp or perm)</li>
+              <li>paralysis (perm)</li>
+              <li>holding a baby in arm (temporary)</li>
+            </ul>
+          </section>
+          <section
+            data-background="https://hackaday.com/wp-content/uploads/2018/04/eye-tracking-e1525209664952.png?w=800"
+          >
+            <h2>eye tracking</h2>
+          </section>
+          <section>
+            <h3>Hearing</h3>
+            <ul>
+              <li>deaf (perm)</li>
+              <li>can't listen to audio in an open office (situational)</li>
+              <li>visual alt</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Cognitive or stressful</h3>
+            <ul>
+              <li>in a hurry, distracted (temp)</li>
+              <li>concussion (temp)</li>
+              <ul>
+                <li>double vision</li>
+                <li>difficulty balancing</li>
+                <li>motor coordination</li>
+              </ul>
+              <li>zoom in</li>
+              <li>minimize design distraction</li>
+            </ul>
+          </section>
+          <section>repetitive strain injury (temp & perm)</section>
+        </section>
+        <section>
+          <h2>Improve assessbility for a narrow sense improve UX for everyone</h2>
+          <p>healthy people exp temporary or situational impairment</p>
+        </section>
+        <section>
+          <h2>common errors</h2>
+          <section>label not linked to field (text for field)</section>
+          <section>empty button (text for purpose)</section>
+          <section>
+            <h3>missing html doc</h3>
+            <pre><code data-trim data-noescape>&lt;html lang="fr"&gt;</code></pre>
+            <p>read out with correct language</p>
+          </section>
+        </section>
+        <section>
+          <h2>Web AIM checklist</h2>
+          https://webaim.org/standards/wcag/checklist
+        </section>
+        <section>
+          <h2>resources</h2>
+          <ul>
+            <li>https://a11y.coffee</li>
+            <li>https://classroom.udacity.com/courses/ud891</li>
+            <li>
+              https://www.colourblindawareness.org/colour-blindness/#:~:text=Colour%20Blindness,-What%20is%20colour&text=Colour%20(color)%20blindness%20(colour,most%20of%20whom%20are%20male.
+            </li>
+          </ul>
+        </section>
+        <section>Thank you</section>
+      </div>
+    </div>
 
-		<title>reveal.js</title>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
-
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
-
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
